@@ -1,6 +1,7 @@
 import Companies from './Companies'
 import ContactFrom from './Contactus'
 import HeroSection from './HeroSection'
+// import NewsList from './NewsList'
 import Services from './Services'
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
    <Services/>
    <Companies/>
    <ContactFrom/>
+   {/* <NewsList/> */}
    </>
   )
 }

@@ -52,7 +52,6 @@ const Header = () => {
           <ul>
             <li><a className="active" href="/">Home</a></li>
             <li><a href="/news"> Check News</a></li>
-      
             {user ? (
               <li><span onClick={handlelogout} style={{fontSize: "25px" , cursor: "pointer" }}>Logout</span></li>
             ) : (
