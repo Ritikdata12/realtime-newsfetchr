@@ -30,7 +30,7 @@ const NewsList = () => {
     const fetcharticle = async () => {
       setloading(true);
       try {
-        const response = await axios.get<Article[]>(`http://localhost:3001/api/news/news/${category}`);
+        const response = await axios.get<Article[]>(`https://cautious-cynde-dataprojects-0d4a403b.koyeb.app/api/news/news/${category}`);
         const sortedArticles = response.data.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
         setarticle(sortedArticles);
       } catch (error) {
@@ -97,7 +97,7 @@ const NewsList = () => {
       }
 
       const response = await axios.post(
-        `http://localhost:3001/api/news/subscribe`,
+        `https://cautious-cynde-dataprojects-0d4a403b.koyeb.app/api/news/subscribe`,
         { email, category },
         { headers: { Authorization: `Bearer ${token}` } }
       );

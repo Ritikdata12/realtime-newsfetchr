@@ -83,7 +83,7 @@ const fetchnews = (category) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.fetchnews = fetchnews;
-const newsCronJob = new cron_1.CronJob('59 17 * * *', () => __awaiter(void 0, void 0, void 0, function* () {
+const newsCronJob = new cron_1.CronJob('22 18 * * *', () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const categories = yield prisma_1.default.subscription.findMany({
             select: { category: true },

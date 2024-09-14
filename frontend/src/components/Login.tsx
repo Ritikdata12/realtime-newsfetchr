@@ -23,7 +23,7 @@ const Login = () => {
     setloading(true);
 
     try {
-      const response = await axios.post('http://localhost:3001/api/user/login', {
+      const response = await axios.post('https://cautious-cynde-dataprojects-0d4a403b.koyeb.app/api/user/login', {
         email,
         password,
       });

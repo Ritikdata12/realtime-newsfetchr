@@ -21,7 +21,7 @@ const Register = () => {
     setloading(true);
 
     try {
-      const response = await axios.post('http://localhost:3001/api/user/register', {
+      const response = await axios.post('https://cautious-cynde-dataprojects-0d4a403b.koyeb.app/api/user/register', {
         name,
         email,
         password,
