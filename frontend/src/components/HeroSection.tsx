@@ -4,6 +4,7 @@ import img1 from '../assets/contact1.png';
 
 const HeroSection = () => {
   useEffect(() => {
+    // @ts-ignore
     window.particlesJS('particles-js', {
       "particles": {
         "number": {
