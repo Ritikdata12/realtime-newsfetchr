@@ -51,15 +51,12 @@ const Header = () => {
         <nav className={`navbar ${menuOpen ? 'nav-toggle' : ''}`}>
           <ul>
             <li><a className="active" href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="/news"> Check News</a></li>
+      
             {user ? (
               <li><span onClick={handlelogout} style={{fontSize: "25px" , cursor: "pointer" }}>Logout</span></li>
             ) : (
-              <li><a href="/register">Sign Up</a></li>
+              <li><a href="/register">Sign Up/login</a></li>
             )}
           </ul>
         </nav>

@@ -30,7 +30,7 @@ const Login = () => {
 
       if (response.status === 200) {
         localStorage.setItem('token', response.data.token);
-        alert("Login successful. Welcome to our site");
+        alert("login successful");
         setUser(email); 
         navigate('/'); 
       } else {
@@ -45,7 +45,7 @@ const Login = () => {
     } finally {
       setTimeout(() => {
         setloading(false);
-      }, 1000);
+      }, 2000);
     }
   };
 
@@ -89,6 +89,7 @@ const Login = () => {
           </Form>
         </div>
       </Container>
+      
       </div>
     </>
   );

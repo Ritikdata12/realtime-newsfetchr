@@ -1,100 +1,104 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Form, Button, Container } from 'react-bootstrap';
+import { Form, Button, Container} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import "./Register.css";
+import './Register.css';
 
 const Register = () => {
-  const [name, setname] = useState<string>("");
-  const [email, setemail] = useState<string>("");
-  const [password, setpassword] = useState<string>("");
-  const [loading, setloading] = useState<boolean>(false);
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [loading, setLoading] = useState<boolean>(false);
 
   const navigate = useNavigate();
 
-  const handleclick = (): void => {
-    navigate("/login");
-  }
+  const handleClick = (): void => {
+    navigate('/login');
+  };
 
-  const handlesubmit = async (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    setloading(true);
+    setLoading(true);
 
     try {
-      const response = await axios.post('https://cautious-cynde-dataprojects-0d4a403b.koyeb.app/api/user/register', {
-        name,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        'https://cautious-cynde-dataprojects-0d4a403b.koyeb.app/api/user/register',
+        {
+          name,
+          email,
+          password,
+        }
+      );
 
-      console.log("Response from server:", response);
+      console.log('Response from server:', response);
 
       if (response.status === 200) {
-        alert("Registration successful");
-        navigate("/login");
+        alert('Registration successful');
+        navigate('/login');
       } else {
-        alert("Registration failed.");
+        alert('Registration failed.');
         console.log('Registration failed response:', response.data);
       }
     } catch (err: any) {
-      console.error("Error during registration:", err);
+      alert('Error during registration: ' + err.message);
     } finally {
       setTimeout(() => {
-        setloading(false);
+        setLoading(false); 
       }, 2000);
     }
   };
 
   return (
     <>
-    <div className="cont1">
-      <Container className="d-flex justify-content-center align-items-center min-vh-100">
-        <div className="box1 p-4 shadow rounded">
-          <h2 className="text-center mb-4 text-primary">Register</h2>
-          <Form onSubmit={handlesubmit}>
-            <Form.Group controlId="name">
-              <Form.Label className="fw-bold">Name</Form.Label>
-              <Form.Control
-                type="text"
-                value={name}
-                onChange={(e) => setname(e.target.value)}
-                required
-                className="mb-3"
-              />
-            </Form.Group>
+      <div className="cont1">
+        <Container className="d-flex justify-content-center align-items-center min-vh-100">
+          <div className="box1 p-4 shadow rounded">
+            <h2 className="text-center mb-4 text-primary">Register</h2>
+            <Form onSubmit={handleSubmit}>
+              <Form.Group controlId="name">
+                <Form.Label className="fw-bold">Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  className="mb-3"
+                />
+              </Form.Group>
 
-            <Form.Group controlId="email">
-              <Form.Label className="fw-bold">Email</Form.Label>
-              <Form.Control
-                type="email"
-                value={email}
-                onChange={(e) => setemail(e.target.value)}
-                required
-                className="mb-3"
-              />
-            </Form.Group>
+              <Form.Group controlId="email">
+                <Form.Label className="fw-bold">Email</Form.Label>
+                <Form.Control
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="mb-3"
+                />
+              </Form.Group>
 
-            <Form.Group controlId="password">
-              <Form.Label className="fw-bold">Password</Form.Label>
-              <Form.Control
-                type="password"
-                value={password}
-                onChange={(e) => setpassword(e.target.value)}
-                required
-                className="mb-3"
-              />
-            </Form.Group>
-            <div className="d-flex justify-content-between mt-4">
-              <Button variant="primary" type="submit" disabled={loading}>
-                {loading ? 'Registering...' : 'Register'}
-              </Button>
-              <Button variant="secondary" onClick={handleclick} disabled={loading}>
-                Login
-              </Button>
-            </div>
-          </Form>
-        </div>
-      </Container>
+              <Form.Group controlId="password">
+                <Form.Label className="fw-bold">Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                  className="mb-3"
+                />
+              </Form.Group>
+              <div className="d-flex justify-content-between mt-4">
+                <Button variant="primary" type="submit" disabled={loading}>
+                  {loading ? 'Registering...' : 'Register'}
+                </Button>
+                <Button variant="secondary" onClick={handleClick} disabled={loading}>
+                  Login
+                </Button>
+              </div>
+            </Form>
+          </div>
+        </Container>
+        
       </div>
     </>
   );

@@ -21,7 +21,7 @@ const NewsList = () => {
   const [article, setarticle] = useState<Article[]>([]);
   const [loading, setloading] = useState<boolean>(true);
   const [currpage, setCurrPage] = useState<number>(1);
-  const [category, setcategory] = useState<string>("technology");
+  const [category, setcategory] = useState<string>("politics");
 
   const navigate = useNavigate();
   const page = 15;

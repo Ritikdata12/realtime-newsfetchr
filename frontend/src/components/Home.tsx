@@ -1,9 +1,14 @@
-import NewsList from './NewsList'
-
+import Companies from './Companies'
+import ContactFrom from './Contactus'
+import HeroSection from './HeroSection'
+import Services from './Services'
 const Home = () => {
   return (
    <>
-   <NewsList/>
+   <HeroSection/>
+   <Services/>
+   <Companies/>
+   <ContactFrom/>
    </>
   )
 }
