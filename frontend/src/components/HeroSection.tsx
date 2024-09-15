@@ -123,11 +123,10 @@ const HeroSection = () => {
       <div className="hero-section">
         <div className="job-search">
           <div className="job-search-content">
-            <h1 className='hh'>Find the <br /> <span className='hh'>job that fits your life</span></h1>
+            <h1 className='hh'>Find the <br /> <span className='hh'>top live  news here</span></h1>
             <p>
-              Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum.
-              Vestibulum congue posuere lacus, id tincidunt nisi porta sit amet.
-              Suspendisse et sapien varius, pellentesque dui non.
+              In this platform you will see all types of news which is benefical for you.here for real time
+              news we are tie up with many top companies also.
             </p>
            
           </div>
