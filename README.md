@@ -80,4 +80,4 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 ![image](https://github.com/user-attachments/assets/067fa017-be0a-4457-9727-7de2dd7d9389)
 
 #### video of the project
-[![video](https://i.sstatic.net/Vp2cE.png)](https://drive.google.com/file/d/17OWmLMsJnL1nGn3fhprqJhEyNVTC4_eU/view?usp=sharing)
+[![video](https://github.com/user-attachments/assets/17e8f5b7-400b-467f-a302-e10c63e0d179)](https://drive.google.com/file/d/17OWmLMsJnL1nGn3fhprqJhEyNVTC4_eU/view?usp=sharing)
