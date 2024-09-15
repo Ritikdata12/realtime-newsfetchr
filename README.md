@@ -32,7 +32,9 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 - **Prisma ORM**: Used as a data modeling tool to manage interactions with the neon postgresql database.
 
 ### Deployment:
-- **Node.js**: Backend runtime environment.
+- **Backend** : Backend is deployed on koyeb.
+- **Frontend** : Frontend is deployed on vercel.
+- **Backend uurl**: [Backend runtime environment.](https://cautious-cynde-dataprojects-0d4a403b.koyeb.app/api/news/news)
 
 ### Tools & Libraries:
 - **TypeScript**: For type safety in both backend and frontend.
