@@ -111,11 +111,8 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 ## 3. Signup/Login Page
 - To access personalized features like subscriptions, the user must sign up or log in.
 - Clicking on the "Signup/Login" link or button redirects the user to the authentication page.
-- Signup:
-- New users can sign up by providing their name, email, password, and other details.
-* Login:
-- Existing users can log in using their email and password.
-- Once logged in, the user can subscribe to different news categories and receive notifications or email updates based on their preferences.
+- Signup: New users can sign up by providing their name, email, password, and other details.
+* Login: Existing users can log in using their email and password. Once logged in, the user can subscribe to different news categories and receive notifications or email updates based on their preferences.
 
 
 #### Work flow diagram
