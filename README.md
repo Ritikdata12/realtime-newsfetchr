@@ -23,7 +23,7 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 - **Axios**: Used for making HTTP requests to the backend APIs for fetching news articles.
 - **JWT**: Used for secure authentication of users and managing subscriptions.
 - **Neon** : It's the database.
-- ***CRON job*** : for notification and live updates of news i have used cronjob and the timming for cronjon to fetch news is  6:22 pm 
+- ***CRON job*** : for notification and live updates of news i have used cronjob and the timming for cronjob to fetch news is  6:22 pm 
 - ***Nodemailer***:  For sending the emails to the subscribed users with their respective categories nodemailer is used.
 
 ### AI Integration:
