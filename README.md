@@ -76,8 +76,7 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 - A notification service is set up to send updates to users based on their subscription.
 
 #### Work flow diagram
-
-![image](https://github.com/user-attachments/assets/067fa017-be0a-4457-9727-7de2dd7d9389)
+![structure](https://github.com/user-attachments/assets/0d29d49c-156a-4225-8df9-af6b51892bbb)
 
 #### video of the project
 [![video](https://github.com/user-attachments/assets/17e8f5b7-400b-467f-a302-e10c63e0d179)](https://drive.google.com/file/d/17OWmLMsJnL1nGn3fhprqJhEyNVTC4_eU/view?usp=sharing)
