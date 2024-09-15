@@ -22,6 +22,7 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 - **Prisma**: ORM tool to interface with the database, managing schema, queries, and migrations.
 - **Axios**: Used for making HTTP requests to the backend APIs for fetching news articles.
 - **JWT**: Used for secure authentication of users and managing subscriptions.
+- **Neon** : It's the database.
 
 ### AI Integration:
 - **Hugging Face Transformers API**: Integrated for generating news summaries from the title and description part and show on frontend.
@@ -61,22 +62,34 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 
 #### News Aggregation API:
 - An API built using Express.js that aggregates real-time news from different sources.
-- News is fetched and categorized (Politics, Technology, etc.) using a custom scraping algorithm.
+- News is fetched and categorized (Politics, Technology, food, entertainment) from the neon database.
 
 #### AI-Powered Summarization:
-- Each news article is processed through an AI summarizer using Hugging Face or OpenAI’s NLP models.
-- Summaries are generated on the fly and returned to the frontend.
+- Each news article is processed through an AI summarizer using Hugging Face Model.
+- Summaries are generated and stored in the database directly after that it  returned to the frontend.
 
 #### User Authentication:
-- JWT-based authentication to handle user login and session management.
-- User data and subscription preferences are stored in MongoDB using Prisma ORM.
+- JWT-based authentication to handle user login and session management with the help of usercontext api.
+- User data and subscription preferences are stored in neon postgresql database using Prisma ORM.
+
+#### CRON job
+
+- Scheduled Database Backups: Automate regular backups of your database.
+- Sending Scheduled Emails: Send periodic notifications, newsletters, or alerts.
+- for notification and live updates of news i have used cronjob and the timming for cronjon to fetch news is 
+6:22 pm 
+
+#### Nodemailer
+- For sending the emails to the subscribed users with their respective categories nodemailer is used.
 
 #### Subscription and Notification:
 - Users can subscribe to a specific news category.
 - A notification service is set up to send updates to users based on their subscription.
 
 #### Work flow diagram
-![structure](https://github.com/user-attachments/assets/0d29d49c-156a-4225-8df9-af6b51892bbb)
+
+
+![Alt text](structure.jpeg)
 
 #### video of the project
 [![video](https://github.com/user-attachments/assets/17e8f5b7-400b-467f-a302-e10c63e0d179)](https://drive.google.com/file/d/17OWmLMsJnL1nGn3fhprqJhEyNVTC4_eU/view?usp=sharing)
