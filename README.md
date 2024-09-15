@@ -73,7 +73,7 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 
 #### Subscription and Notification:
 - Users can subscribe to a specific news category.
-- A notification service is set up to send updates to users based on their subscriptions.
+- A notification service is set up to send updates to users based on their subscription.
 
 #### Work flow diagram
 
