@@ -41,7 +41,8 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 ### Tools & Libraries:
 - **TypeScript**: For type safety in both backend and frontend.
 - **Postman**: API testing during the development phase.
-- **React Testing Library**: For testing the frontend components.
+  **Nodemailer** : For Sending the emails to the subscribed users with respect to their category nodemailer is used.
+  **Cronjob** : For fetching the live news from the newsapi cron job is used and the timer of cronjob is 6:22pm;
 
 ## Features
 
@@ -89,6 +90,33 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 #### Subscription and Notification:
 - Users can subscribe to a specific news category.
 - A notification service is set up to send updates to users based on their subscription.
+
+
+## Steps to Start this Project
+- First clone the github repo
+- run npm install in both frontend and backend to install the node_modules
+- to run the frontend run command npm run dev
+- to run the backend run command npx nodemon ./src/index.ts
+
+## preview of my site
+### 1. Home Page
+- When a user first visits the website, they land on the Home page.
+
+## 2. Check News Page
+- Clicking on the "Check News" tab or button navigates the user to the news feed.
+- This page introduces the platform, showcasing features like real-time news aggregation and AI-powered summaries. The user can browse some highlighted news articles and see a brief overview of the different news categories.
+- the user can see the latest news across different categories (Politics, Technology, Food, Health).
+- Each news article shows: Title, Image ,Short AI-generated summary, Publication date, Read more button and subscribe button.
+- Pagination is available to navigate through multiple pages of news articles.
+## 3. Signup/Login Page
+- To access personalized features like subscriptions, the user must sign up or log in.
+- Clicking on the "Signup/Login" link or button redirects the user to the authentication page.
+- Signup:
+- New users can sign up by providing their name, email, password, and other details.
+* Login:
+- Existing users can log in using their email and password.
+- Once logged in, the user can subscribe to different news categories and receive notifications or email updates based on their preferences.
+
 
 #### Work flow diagram
 
