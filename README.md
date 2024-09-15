@@ -90,8 +90,9 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 
 #### Work flow diagram
 
+![structure](https://github.com/user-attachments/assets/8e9827fa-4053-4f5c-9ff8-b92a7c38709f)
 
-![Alt text](structure.jpeg)
+
 
 #### video of the project
 [![video](https://github.com/user-attachments/assets/17e8f5b7-400b-467f-a302-e10c63e0d179)](https://drive.google.com/file/d/17OWmLMsJnL1nGn3fhprqJhEyNVTC4_eU/view?usp=sharing)
