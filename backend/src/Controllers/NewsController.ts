@@ -82,28 +82,28 @@ const fetchnews = async (category: string) => {
   }
 };
 
-const newsCronJob = new CronJob(
-  '22 18 * * *', 
-  async () => {
-    try {
-      const categories = await prisma.subscription.findMany({
-        select: { category: true },
-        distinct: ["category"],
-      });
+// const newsCronJob = new CronJob(
+//   '22 18 * * *', 
+//   async () => {
+//     try {
+//       const categories = await prisma.subscription.findMany({
+//         select: { category: true },
+//         distinct: ["category"],
+//       });
 
-      for (const { category } of categories) {
-        await fetchnews(category);
-      }
-    } catch (error) {
-      console.error("Error running scheduled news fetch:", error);
-    }
-  },
-  null,
-  true,
-  "Asia/Kolkata"
-);
+//       for (const { category } of categories) {
+//         await fetchnews(category);
+//       }
+//     } catch (error) {
+//       console.error("Error running scheduled news fetch:", error);
+//     }
+//   },
+//   null,
+//   true,
+//   "Asia/Kolkata"
+// );
 
-newsCronJob.start();
+// newsCronJob.start();
 
 const getnews = async (req: Request, res: Response) => {
   try {
