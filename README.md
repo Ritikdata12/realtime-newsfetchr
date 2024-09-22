@@ -33,6 +33,14 @@ This project is a Real-Time News Aggregator that integrates AI-powered news summ
 - **Postgresql**: SQL database used to store user data, subscription preferences, and news article data.
 - **Prisma ORM**: Used as a data modeling tool to manage interactions with the neon postgresql database.
 
+- ##To Create Prisma Data##
+- ### go to the src directory###
+- ###install npm install @prisma/client###
+- ### npx prisma init###
+- ### when your schema and model is setup ###
+- ### then run npx prisma generate###
+- ### then npx prisma db push### through these lines your prisma will setup correctly
+
 ### Deployment:
 - **Backend** : Backend is deployed on koyeb.
 - **Frontend** : Frontend is deployed on vercel.
